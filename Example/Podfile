@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TYProgressBar_Example' do
+  pod 'TYProgressBar', :path => '../'
+
+  target 'TYProgressBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
