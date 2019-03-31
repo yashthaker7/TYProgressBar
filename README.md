@@ -1,9 +1,8 @@
 # TYProgressBar
 
-[![CI Status](https://img.shields.io/travis/yashthaker7/TYProgressBar.svg?style=flat)](https://travis-ci.org/yashthaker7/TYProgressBar)
-[![Version](https://img.shields.io/cocoapods/v/TYProgressBar.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar)
-[![License](https://img.shields.io/cocoapods/l/TYProgressBar.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar)
-[![Platform](https://img.shields.io/cocoapods/p/TYProgressBar.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar)
+[![Version](https://img.shields.io/cocoapods/v/TYProgressBar.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar/)
+[![License](https://img.shields.io/cocoapods/l/NumberPicker.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar/)
+[![Platform](https://img.shields.io/cocoapods/p/TYProgressBar.svg?style=flat)](https://cocoapods.org/pods/TYProgressBar/)
 
 Custom animating gradient progress bar. <br />
 
