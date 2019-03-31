@@ -1,0 +1,22 @@
+{
+  "name": "TYProgressBar",
+  "version": "0.1.0",
+  "summary": "A short description of TYProgressBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yashthaker7/TYProgressBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yashthaker7": "yashthaker7@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yashthaker7/TYProgressBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TYProgressBar/Classes/**/*"
+}

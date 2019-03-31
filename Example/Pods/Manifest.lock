@@ -1,0 +1,16 @@
+PODS:
+  - TYProgressBar (0.1.0)
+
+DEPENDENCIES:
+  - TYProgressBar (from `../`)
+
+EXTERNAL SOURCES:
+  TYProgressBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TYProgressBar: cc307bde86942908d745ae32978eca57a908cd9b
+
+PODFILE CHECKSUM: 98025d9b4dbcc6b5695fa8065f095823df2a0c39
+
+COCOAPODS: 1.6.1
