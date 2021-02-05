@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYProgressBar'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'Custom animating gradient progress bar.'
 
   s.homepage         = 'https://github.com/yashthaker7/TYProgressBar'
