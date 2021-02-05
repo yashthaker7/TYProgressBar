@@ -9,6 +9,12 @@ import UIKit
 
 public class TYProgressBar: UIView {
     
+    public var trackColor: UIColor = #colorLiteral(red: 0.200000003, green: 0.200000003, blue: 0.200000003, alpha: 0.5) {
+        didSet {
+            trackLayer.strokeColor = trackColor.cgColor
+        }
+    }
+    
     public var gradients: [UIColor] = [#colorLiteral(red: 0.7843137255, green: 0.4274509804, blue: 0.8431372549, alpha: 1), #colorLiteral(red: 0.1882352941, green: 0.137254902, blue: 0.6823529412, alpha: 1)] {
         didSet {
             let gradientColors = gradients.map { $0.cgColor }
@@ -68,7 +74,7 @@ public class TYProgressBar: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        pulsingGradientLayer = createGradientLayer()    // Masking layer
+        pulsingGradientLayer = createGradientLayer(colors: gradients)  // Masking layer
         self.layer.addSublayer(pulsingGradientLayer)
         
         pulsingLayer = createShapeLayer(strokeColor: UIColor(white: 0, alpha: 0.2), fillColor: .clear)
@@ -78,11 +84,11 @@ public class TYProgressBar: UIView {
         
         pulsingGradientLayer.mask = pulsingLayer
         
-        trackLayer = createShapeLayer(strokeColor: UIColor(white: 0.2, alpha: 0.5), fillColor: .clear)
+        trackLayer = createShapeLayer(strokeColor: trackColor, fillColor: .clear)
         trackLayer.strokeEnd = 1
         self.layer.addSublayer(trackLayer)
         
-        shapeGradientLayer = createGradientLayer()  // Masking layer
+        shapeGradientLayer = createGradientLayer(colors: gradients)  // Masking layer
         self.layer.addSublayer(shapeGradientLayer)
         
         shapeLayer = createShapeLayer(strokeColor: .black, fillColor: .clear)
@@ -172,9 +178,9 @@ public class TYProgressBar: UIView {
         return layer
     }
     
-    func createGradientLayer() -> CAGradientLayer {
+    func createGradientLayer(colors: [UIColor]) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
-        let defaultColors = gradients.map { $0.cgColor }
+        let defaultColors = colors.map { $0.cgColor }
         gradientLayer.colors = defaultColors
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)

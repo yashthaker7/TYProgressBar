@@ -32,6 +32,7 @@ Customize
 ---------
 You can change gradient color and label font and text color 
 ```swift
+progressBar.trackColor = UIColor(white: 0.2, alpha: 0.5)
 progressBar.gradients = [UIColor.red, UIColor.yellow]
 progressBar.textColor = .orange
 progressBar.font = UIFont(name: "HelveticaNeue-Medium", size: 22)!
